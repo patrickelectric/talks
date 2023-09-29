@@ -13,3 +13,13 @@
    3. git add patch / checkout patch
    4. git add
 4. staged funfa tanto para staged quan
+
+N G
+16 checkout
+20 checkout -
+24 patch
+29 stash
+37 rebase
+53 Tools
+58 Config
+65 final
