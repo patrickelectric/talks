@@ -12,3 +12,4 @@
    2. git add / checkout
    3. git add patch / checkout patch
    4. git add
+4. staged funfa tanto para staged quan

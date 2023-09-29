@@ -396,25 +396,240 @@ index 7dcbf58b..8cdec8b1 100644
 
 git stash apply stash@\{1\}
 
----
-
-# Danger zone
 
 ---
 
-# Danger zone
-
-- git clean
-- git reset --hard
-- git rm FILE
-
----
-
-# Danger zone
+## Danger zone
 
 - git clean # git stash --include-untracked
 - git reset --hard # git stash
 - git rm FILE # git stash push FILE --include-untracked
+
+
+---
+
+## rebase
+
+---
+
+## rebase
+
+git rebase origin/master
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+pick 43013f99 store: autopilot: Add autopilot_type property
+pick 0e70e64f components: health: HealthTrayMenu: Add autopilot type
+pick 94f83cf5 views: Autopilot: Add autopilot type banner
+pick 54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+pick 0e70e64f components: health: HealthTrayMenu: Add autopilot type
+pick 43013f99 store: autopilot: Add autopilot_type property
+pick 94f83cf5 views: Autopilot: Add autopilot type banner
+pick 54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+pick 0e70e64f components: health: HealthTrayMenu: Add autopilot type
+pick 43013f99 store: autopilot: Add autopilot_type property
+pick 54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup [-C | -c] <commit> = like "squash" but keep only the previous
+#                    commit's log message, unless -C is used, in which case
+#                    keep only this commit's message; -c is same as -C but
+#                    opens the editor
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+#         create a merge commit using the original merge commit's
+#         message (or the oneline, if no original merge commit was
+#         specified); use -c <commit> to reword the commit message
+# u, update-ref <ref> = track a placeholder for the <ref> to be updated
+#                       to this position in the new commits. The <ref> is
+#                       updated at the end of the rebase
+
+```
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+pick a312c12e components: health: HealthTrayMenu: Fix autopilot type
+pick 43013f99 store: autopilot: Add autopilot_type property
+pick 0e70e64f components: health: HealthTrayMenu: Add autopilot type
+pick 94f83cf5 views: Autopilot: Add autopilot type banner
+pick 54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+pick 43013f99 store: autopilot: Add autopilot_type property
+pick a312c12e components: health: HealthTrayMenu: Fix autopilot type
+pick 0e70e64f components: health: HealthTrayMenu: Add autopilot type
+pick 94f83cf5 views: Autopilot: Add autopilot type banner
+pick 54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+pick 43013f99 store: autopilot: Add autopilot_type property
+fixup a312c12e components: health: HealthTrayMenu: Fix autopilot type
+pick 0e70e64f components: health: HealthTrayMenu: Add autopilot type
+pick 94f83cf5 views: Autopilot: Add autopilot type banner
+pick 54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase -i origin/master
+
+```
+pick 43013f99 store: autopilot: Add autopilot_type property
+pick 7b8921ca components: health: HealthTrayMenu: Add autopilot type
+pick 94f83cf5 views: Autopilot: Add autopilot type banner
+pick 54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+---
+
+## rebase
+
+git commit --fixup 0e70e64f
+
+---
+
+## rebase
+
+git commit --fixup 0e70e64f
+
+```
+a312c12e fixup! components: health: HealthTrayMenu: Add autopilot type
+43013f99 store: autopilot: Add autopilot_type property
+0e70e64f components: health: HealthTrayMenu: Add autopilot type
+94f83cf5 views: Autopilot: Add autopilot type banner
+54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase origin/master --autosquash
+
+```
+a312c12e fixup! components: health: HealthTrayMenu: Add autopilot type
+43013f99 store: autopilot: Add autopilot_type property
+0e70e64f components: health: HealthTrayMenu: Add autopilot type
+94f83cf5 views: Autopilot: Add autopilot type banner
+54bdc6d2 assets: Add banners
+```
+
+---
+
+## rebase
+
+git rebase origin/master --autosquash
+
+```
+43013f99 store: autopilot: Add autopilot_type property
+0e70e64f components: health: HealthTrayMenu: Add autopilot type
+94f83cf5 views: Autopilot: Add autopilot type banner
+54bdc6d2 assets: Add banners
+```
+
+---
+
+# Tools
+
+---
+
+# Tools
+
+- [Tig (Text-mode Interface for Git)](https://github.com/jonas/tig)
+
+---
+
+# Tools
+
+- [Tig (Text-mode Interface for Git)](https://github.com/jonas/tig)
+- [Delta](https://github.com/dandavison/delta)
+
+---
+
+# Tools
+
+- [Tig (Text-mode Interface for Git)](https://github.com/jonas/tig)
+- [Delta](https://github.com/dandavison/delta)
+- [Diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+
+---
+
+# Tools
+
+- [Tig (Text-mode Interface for Git)](https://github.com/jonas/tig)
+- [Delta](https://github.com/dandavison/delta)
+- [Diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+- [Absorb](https://github.com/tummychow/git-absorb)
 
 ---
 
@@ -539,28 +754,6 @@ git ck new-feature
 
 Questions ?
 
+- [Mastering Git - By Jakub Narębski](https://www.packtpub.com/product/mastering-git/9781783553754)
+- [Pro Git - 280+ contributors](https://git-scm.com/book/en/v2)
 ---
-
-## Pre-process slides
-
-You can add a code block with three tildes (`~`) and write a command to run *before* displaying
-the slides, the text inside the code block will be passed as `stdin` to the command
-and the code block will be replaced with the `stdout` of the command.
-
-~~~graph-easy --as=boxart
-[ A ] - to -> [ B ]
-~~~
-
-The above will be pre-processed to look like:
-
-```
-┌───┐  to   ┌───┐
-│ A │ ────> │ B │
-└───┘       └───┘
-```
-For security reasons, you must pass a file that has execution permissions
-for the slides to be pre-processed. You can use `chmod` to add these permissions.
-
-```bash
-chmod +x file.md
-```
